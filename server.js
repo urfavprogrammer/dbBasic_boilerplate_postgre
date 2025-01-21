@@ -1,5 +1,5 @@
 const express = require('express');
-const db = require('./utils/db');
+const db = require('./config/db');
 const userRoutes = require('./routes/users');
 
 const app = express();
@@ -17,6 +17,8 @@ app.get('/', (req, res) => {
 
 // Use the user routes
 app.use('/users', userRoutes);
+
+
 
 
 // Sync database and start the server

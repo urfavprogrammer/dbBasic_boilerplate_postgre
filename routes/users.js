@@ -23,4 +23,7 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/register")
+
+
 module.exports = router;
